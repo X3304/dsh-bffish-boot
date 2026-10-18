@@ -1,7 +1,7 @@
 {
   "name": "dsh-fish-boot",
   "displayName": "DSH 开机动画（大肥鱼）",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A configurable full-screen video startup animation for DeepSeek Harness, with its own settings section.",
   "keywords": [
     "dsh-plugin",

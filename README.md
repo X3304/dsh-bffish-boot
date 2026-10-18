@@ -53,7 +53,7 @@ dsh plugin --profile desktop add "file:E:\code\dsh-fish-boot"
 | `enabled` | `true` | 关掉就不再播放 |
 | `source` | `""` | 空 = 用插件内置的 `assets/boot-fish.mp4`；也可填绝对路径或相对 profile 目录的路径，支持 mp4 / webm / gif / png |
 | `scale` | `"contain"` | `contain` 完整显示，`cover` 铺满裁切 |
-| `waitForApp` | `true` | **应用一准备好就淡出，不等视频播完** —— 启动速度和没装插件一样。关掉则一律播完整段 |
+| `waitForApp` | `false` | 默认播完整段。打开则**应用一准备好就淡出**，启动速度和没装插件一样，代价是视频只放一部分 |
 | `minSeconds` | `0` | 这段时间内点不动，用来保证动画至少被看到 |
 | `maxSeconds` | `0` | `0` = 播到结尾；设成 `2` 就只闪两秒 |
 | `fadeMs` | `450` | 结束后淡出到界面的时长 |
