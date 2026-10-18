@@ -1,0 +1,4 @@
+- insert:
+    - id: fish-boot
+      name: dsh-fish-boot
+      config: {}
