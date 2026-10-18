@@ -61,7 +61,7 @@ dsh plugin --profile desktop add "file:E:\code\dsh-fish-boot"
 | `muted` | `true` | 关掉静音会被浏览器的自动播放策略拦截；被拦时插件会自动退回静音再试一次 |
 | `skippable` | `true` | 显示「点击或按 Esc 跳过」 |
 | `hideBootScreen` | `true` | 从**第一帧**就盖住原生启动屏 —— 包括视频开始前那个 `HARNESS` + 转圈。改写 index.html 实现，不等脚本加载 |
-| `maskTitlebar` | `true` | **仅 Windows**：播放期间把右上角的最小化 / 最大化 / 关闭和标题栏底色一起淡掉，播完恢复。按钮仍然可以点 |
+| `maskTitlebar` | `true` | **仅 Windows**：播放期间把右上角的最小化 / 最大化 / 关闭和标题栏底色一起淡掉，播完恢复。按钮仍然可以点。靠注入到 index.html 的脚本在启动阶段就生效，不是等插件加载 |
 | `backgroundColor` | `"#000000"` | 黑边区域的颜色 |
 
 ## 换成自己的视频
