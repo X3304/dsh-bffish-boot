@@ -60,7 +60,7 @@ dsh plugin --profile desktop add "file:E:\code\dsh-fish-boot"
 | `loop` | `false` | 循环播放（配合 `maxSeconds` 才有意义） |
 | `muted` | `true` | 关掉静音会被浏览器的自动播放策略拦截；被拦时插件会自动退回静音再试一次 |
 | `skippable` | `true` | 显示「点击或按 Esc 跳过」 |
-| `hideBootScreen` | `true` | 播放期间盖住原生的 `HARNESS / Loading plugins…` |
+| `hideBootScreen` | `true` | 从**第一帧**就盖住原生启动屏 —— 包括视频开始前那个 `HARNESS` + 转圈。改写 index.html 实现，不等脚本加载 |
 | `backgroundColor` | `"#000000"` | 黑边区域的颜色 |
 
 ## 换成自己的视频
